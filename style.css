@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #FFFFEE;
+}
+h4 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.faq {
+    padding-top: 150px;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .how-it-works .faq {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  
+  .faq .accordion {
+    width: 900px;
+    margin: auto;
+  }
+  
+  .faq .accordion .accordion-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+  }
+  
+  .faq .accordion .accordion-item {
+    /* display: block; */
+    border-top: solid 3px #D39735;
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .faq .accordion .accordion-item-bottom {
+    border-bottom: solid 3px #D39735;
+  }
+  
+  .faq .accordion .accordion-item span {
+    display: block;
+  }
+  
+  .faq .accordion .accordion-item .checkbox {
+    display: none;
+  }
+  
+  .faq .accordion .accordion-item label {
+    width: 95%;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .faq .accordion .accordion-item h4 {
+    display: block;
+    margin: auto 0;
+    padding-top: 15px;
+    cursor: pointer;
+    width: 90%;
+  }
+  
+  .faq .accordion .accordion-item p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    line-height: 1.75em;
+    font-weight: 600;
+  }
+  
+  .faq .accordion .accordion-item .tick {
+    display: block;
+    width: 35px;
+    margin: 8px 20px auto 0;
+    float: left;
+  }
+  
+  .faq .accordion .accordion-item .arrow-icon {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 3px;
+    top: -18px;
+    left: -10px;
+    border-radius: 5px;
+    margin: auto;
+    float: right;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .faq .accordion .accordion-item .arrow-icon:before {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: auto;
+    float: right;
+    transform: rotate(-90deg);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .faq .accordion .accordion-item .panel {
+    position: relative;
+    padding: 0 55px 20px 55px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    z-index: 2;
+    clear: both;
+  }
+
+  .faq .accordion .accordion-item .panel h4 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      cursor: text;
+  }
+  .faq .accordion .accordion-item .panel h5 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    margin-bottom: 45px;
+    cursor: text;
+    text-align: center;
+}
+.faq .accordion .accordion-item .panel .black-box {
+    background-color: #FFEFD5;
+    width: 100%;
+    border-top: #D39735 solid 5px;
+    border-bottom: #D39735 solid 5px;
+    padding: 0 15px;
+}
+/* .faq .accordion .accordion-item .panel .black-box h4,
+.faq .accordion .accordion-item .panel .black-box p,
+.faq .accordion .accordion-item .panel .black-box ul,
+.faq .accordion .accordion-item .panel .black-box li {
+    color: #FFFFEE;
+} */
+.faq .accordion .accordion-item .panel .centred,
+.faq .accordion .accordion-item .panel .black-box .centred {
+    text-align: center;
+    width: 100%;
+}
+.faq .accordion .accordion-item .panel .centred span,
+.faq .accordion .accordion-item .panel .bottom-p span {
+    color: #D39735;
+    display: inline;
+}
+  .faq .accordion .accordion-item .panel .bottom-p {
+      margin-bottom: 45px;
+  }
+
+  .faq .accordion .accordion-item .panel .black-box .two-columns {
+      display: flex;
+      margin-bottom: 40px;
+  }
+
+  .faq .accordion .accordion-item .panel .black-box .two-columns .column {
+      width: 50%;
+  }
+  .faq .accordion .accordion-item .panel ul,
+  .faq .accordion .accordion-item .panel .black-box .two-columns .column ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 25px 0;
+  }
+  .faq .accordion .accordion-item .panel li {
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    padding: 2px;
+  }
+  .faq .accordion .accordion-item .panel .black-box .two-columns .column li {
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    padding: 2px;
+  }
+  .faq .accordion .accordion-item .panel li:before,
+  .faq .accordion .accordion-item .panel .black-box .two-columns .column li:before {
+    content: "●"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #D39735; /* Or a color you prefer */
+  }
+  
+  .faq .accordion .accordion-item input:checked ~ .panel {
+    max-height: 1000px;
+  }
