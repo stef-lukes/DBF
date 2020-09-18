@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+  color: #FFFFEE;
+  font-weight: 900;
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 10px 0;
+}
+
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -320,6 +328,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 #welcome {
@@ -337,6 +346,7 @@ h4 {
   font-size: 2.5vw;
   font-weight: 800;
   margin: 20px 0 10px 0;
+  color: black !important;
 }
 
 #about-quote {
@@ -371,13 +381,15 @@ h4 {
   margin: 10px;
 }
 
-#about-us-section .two-column-flex {
+#about-us-section .two-column-flex,
+.two-column-flex {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-#about-us-section .two-column-flex .column {
+#about-us-section .two-column-flex .column,
+.two-column-flex .column {
   width: 43%;
   font-size: 1.1vw;
   font-weight: 600;
@@ -386,11 +398,10 @@ h4 {
   line-height: 1.6;
 }
 
-#direct-business-line .direct-business-line {
-  font-size: 3vw;
+#direct-business-line {
   text-align: center;
-  margin: 0 20px;
-}
+  }
+
 #direct-business-line .gold-number {
   text-align: center;
   color: #D39735;
@@ -401,13 +412,203 @@ h4 {
   margin: 0 20px;
 }
 
+#direct-business-line h4 {
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+
+/* ------------ Text Boxes ------------- */
+/* ------------ Text Boxes ------------- */
+/* ------------ Text Boxes ------------- */
+
+.black-band {
+  width: 100%;
+  background-color: black;
+  border-top: #D39735 solid 10px;
+  border-bottom: #D39735 solid 10px;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+#tailored-2 {
+  display: none;
+}
+
+#top-txt-2 {
+  display: none;
+}
+
+.three-column-boxes {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;
+  justify-content: space-between;
+}
+
+.three-column-boxes .txt-box {
+  width: 395px;
+  margin: 20px;
+}
+
+.three-column-boxes .top-txt {
+  text-align: center;
+  font-size: 32px;
+}
+
+.three-column-boxes .top-txt span {
+  color: #D39735;
+}
+
+/* .three-column-boxes .txt-box .box {
+  -webkit-box-shadow: -9px 10px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: -9px 10px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: -9px 10px 10px 0px rgba(0,0,0,0.2);
+} */
+
+.three-column-boxes .txt-box .box .box-heading {
+  background-color: #D39735;
+  margin-bottom: 0;
+  text-align: center;
+  color: #FFFFEE;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: solid black 6px;
+}
+
+.three-column-boxes .txt-box .box p {
+  margin: 0;
+  background-color: white;
+  padding: 20px 30px 0 30px;
+  text-align: justify;
+  line-height:  1.7;
+  font-weight: 600;
+  height: 283px;
+  font-size: 16px;
+  border-bottom: #D39735 solid 6px;
+  border-left: #D39735 solid 2px;
+  border-right: #D39735 solid 2px;
+}
+
+#gold-number {
+  margin: 0 0 40px 0;
+  color: #D39735;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ------------ Funding Types ------------- */
+/* ------------ Funding Types ------------- */
+/* ------------ Funding Types ------------- */
+
+.black-band .black-band-sub-heading {
+  color: #ffffee;
+  width: 59%;
+  text-align: center;
+  margin: auto;
+  width: 59%;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#two-column-list {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+#list-column {
+  
+}
+
+#list-column .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#list-column .list-item img {
+  width: 25px;
+  margin: 0 10px 0 0;
+}
+
+#funding-imgs {
+  display: flex;
+  justify-content: center;
+}
+
+#funding-imgs img {
+  margin: 0 30px;
+}
+
+#funding-imgs-2 {
+  display: none;
+}
+
+#click-below {
+  background: black;
+  border-top: 8px solid #d39735;
+  border-bottom: 8px solid #d39735;
+  margin-top: 100px;
+}
+#click-below .sub-heading {
+  font-size: 1.7vw;
+  font-weight: 700;
+  margin: 20px;
+  color: #ffffee;
+  font-style: italic;
+}
+#list-column {
+  margin: 30px 40px;
+}
+#list-column .list-item h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+#two-column-list {
+  width: 870px;
+  margin: 0px auto 0 auto;
+  background: #FFEFD5;
+  border-top: solid 6px #d39735;
+  border-bottom: solid 6px #d39735;
+}
+
+#funding-imgs {
+  margin-top: 50px;
+}
+#funding-imgs img {
+  margin: 0 25px;
+  width: 240px;
+}
+
+#list-column .list-item img {
+  width: 20px;
+}
+.sub-heading {
+  font-size: 48px;
+}
+
+
+
 /* ------------ Accordion ------------- */
 /* ------------ Accordion ------------- */
 /* ------------ Accordion ------------- */
 
 .accordion {
     width: 900px;
-    margin: 150px auto;
+    margin: 80px auto;
   }
   
   .accordion .accordion-wrapper {
@@ -561,7 +762,7 @@ h4 {
     padding: 2px;
   }
   .accordion .accordion-item .panel .black-box .two-columns .column li {
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 2px;
@@ -577,13 +778,124 @@ h4 {
     max-height: 1000px;
   }
 
+  #immediate-response .direct-business-line {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 20px;
+  }
+#immediate-response .direct-business-line-2 {
+  font-size: 62px;
+  font-weight: 900;
+text-align: center;
+margin: 0 20px;
+  }
+  #immediate-response .gold-number {
+    text-align: center;
+    color: #D39735;
+    font-weight: 800;
+    font-size: 98px;
+    margin: 0  0 75px 0;
+  }
+  #logo-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo-number img {
+    width: 9vw;
+    margin: 0 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+
+/* ------------ Declined Finance ------------- */
+/* ------------ Declined Finance ------------- */
+/* ------------ Declined Finance ------------- */
+  
+.two-column-flex .column h5 {
+  font-size: 2vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+.two-column-flex .column .faq-quote {
+  color: #D39735;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.two-column-flex .column .top-paragraph {
+  margin-top: 0;
+}
+
+.two-column-flex .column img {
+  width: 45vw;
+  margin-top: 1vw;
+}
+
+#for-more-info {
+  text-align: center;
+  margin-top: -1vw;
+}
+
+#for-more-info a {
+  text-decoration: none;
+  font-size: 5vw;
+  color: #D39735;
+  font-weight: 800;
+  margin-top: -10px;
+  display: inline-block;
+}
+
+#top-heading {
+  font-size: 2vw;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+#bottom-heading {
+  font-size: 2vw;
+  line-height: 1.4;
+  margin: -1vw 0 0 0;
+}
+
+.two-column-flex {
+  margin-bottom: 3vw !important;
+  margin-top: 3vw;
+}
 
 
+
 /* ------------ Media Queries ------------- */
 /* ------------ Media Queries ------------- */
 /* ------------ Media Queries ------------- */
+
+@media (max-width: 1600px) {
+  .three-column-boxes .txt-box {
+    width: 25vw;
+  }
+  .three-column-boxes .txt-box .box .box-heading {
+    padding: 0.3vw;
+    font-size: 1.2vw;
+  }
+  .three-column-boxes .txt-box .box p {
+    padding: 1.5vw 1.8vw 0 1.8vw;
+    height: 17vw;
+    font-size: 0.98vw;
+  }
+}
 
 @media (max-width: 1250px) {
+    h2 {
+      font-size: 4vw;
+      margin: 0 0 0.6vw 0;
+    }
+    h4 {
+      font-size: 1.9vw;
+    }
     .navbar {
         height: 40px;
         position: absolute;
@@ -668,8 +980,68 @@ h4 {
       #about-quote {
         font-size: 2vw;
       }
-      #about-us-section .two-column-flex .column {
+      #about-us-section .two-column-flex .column,
+      .two-column-flex .column {
         font-size: 1.2vw;
+      }
+      #top-txt-2 {
+        display: flex;
+        width: 740px;
+        justify-content: space-evenly;
+        margin: auto;
+      }
+      #top-txt-2 h3 {
+        font-size: 40px;
+        margin: 0;
+      }
+      #top-txt-2 img {
+        width: 35px;
+      }
+      .three-column-boxes {
+        justify-content: space-evenly;
+      }
+      .three-column-boxes .top-txt {
+        display: none;
+      }
+      .three-column-boxes .txt-box {
+        width: 375px;
+      }
+      .three-column-boxes .txt-box .box .box-heading {
+        padding: 7px;
+        font-size: 18px;
+      }
+      .three-column-boxes .txt-box .box p {
+        padding: 10px 25px 0 25px;
+        height: 280px;
+        font-size: 16px
+      }
+      #gold-number {
+        font-size: 8vw;
+      }
+      #funding-imgs {
+        width: 90%;
+        margin: auto;
+      }
+      #funding-imgs img {
+        margin: 0 10px;
+      }
+      .black-band .black-band-sub-heading {
+        width: 84vw;
+        margin-bottom: 0.5vw;
+        font-size: 1.9vw;
+      }
+      .sub-heading {
+        font-size: 3.5vw;
+        margin-bottom: 1.3vw;
+      }
+      #two-column-list {
+        margin: 0 auto 4vw auto;
+      }
+      .accordion .accordion-item .tick {
+        width: 2.7vw;
+      }
+      #funding-imgs img {
+        width: 19vw;
       }
 }
 
@@ -752,21 +1124,51 @@ h4 {
   }
 
   @media (max-width: 1100px) {
-    #about-us-section .two-column-flex .column {
+    h2 {
+      font-size: 4.5vw;
+    }
+    .black-band {
+      padding: 2vw 0;
+    }
+    #about-us-section .two-column-flex .column,
+    .two-column-flex .column {
       font-size: 1.3vw;
+    }
+    .accordion {
+      width: 85vw;
+    }
+    .accordion .accordion-item p {
+      font-size: 1.6vw;
+      line-height: 1.75;
+    }
+    .accordion .accordion-item .panel .black-box {
+      padding: 0 2vw;
+    }
+    .accordion .accordion-item .panel h4 {
+      font-size: 2vw;
+      margin-bottom: 1vw;
+    }
+    .accordion .accordion-item .panel .black-box .two-columns .column ul {
+      margin: 0 0;
+    }
+    .accordion .accordion-item .panel .black-box .two-columns .column li {
+      font-size: 1.5vw;
     }
   }
 
   @media (max-width: 1000px) {
-    #about-us-section .two-column-flex {
+
+    #about-us-section .two-column-flex,
+    .two-column-flex {
       margin-bottom: 40px;
       margin-top: 0;
       flex-direction: column;
     }
-    #about-us-section .two-column-flex .column {
+    #about-us-section .two-column-flex .column,
+    .two-column-flex .column {
       width: 85%;
       margin: 10px auto;
-      font-size: 16px
+      font-size: 16px;
     }
     #welcome {
       font-size: 4vw;
@@ -778,15 +1180,111 @@ h4 {
     #about-us {
       font-size: 3.5vw;
     }
+    #direct-business-line h4 {
+      font-size: 3vw;
+    }
+    #direct-business-line h1 {
+      font-size: 8vw;
+    }
     #simple {
       font-size: 2.8vw;
     }
     #about-quote {
       font-size: 2.5vw;
     }
+    #top-txt-2 {
+      width: 70vw;
+    }
+    #top-txt-2 h3 {
+      font-size: 4vw;
+    }
+    .three-column-boxes .txt-box {
+      width: 37vw;
+    }
+    #top-txt-2 img {
+      width: 4vw;
+    }
+    .three-column-boxes .txt-box .box .box-heading {
+      padding: 0.5vw;
+      font-size: 1.7vw;
+    }
+    .three-column-boxes .txt-box .box p {
+      padding: 1vw 2vw 0 2vw;
+      height: 28vw;
+      font-size: 1.6vw;
+    }
+    #two-column-list {
+      width: 85%;
+    }
+    #list-column .list-item h4 {
+      font-size: 2vw;
+    }
+    #for-more-info {
+      margin-top: 0;
+    }
+    .two-column-flex .column .faq-quote {
+      font-size: 16px;
+    }
+    .two-column-flex .column h5 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    #gold-number {
+      font-size: 11vw;
+    }
+    .accordion .accordion-item p {
+      font-size: 2vw;
+      line-height: 1.6;
+    }
+    .accordion .accordion-item .panel h4 {
+      font-size: 2.5vw;
+    }
+    .accordion .accordion-item .panel .black-box .two-columns .column li {
+      font-size: 2vw;
+    }
+    .accordion .accordion-item h4 {
+      font-size: 2.3vw;
+      }
+    .accordion .accordion-item .tick {
+      margin: 1.6vw 1.2vw auto 0;
+      }
+    .accordion .accordion-item .panel .black-box .two-columns {
+      display: unset;
+      }
+    .accordion .accordion-item .panel .black-box .two-columns .column {
+      width: 95%;
+      margin: auto;
+      }
+    .accordion .accordion-item .panel h5 {
+      font-size: 16px;
+    }
+    .accordion .accordion-item .panel li {
+      font-size: 2vw;
+    }
+    #click-below .sub-heading {
+      font-size: 2.3vw;
+    }
+    .accordion {
+      margin: 7vw auto;
+    }
+    #list-item-top-a {
+      margin-top: 15px;
+      }
+    #list-item-top-d {
+      margin-bottom: 20px;
+    }
   }
 
   @media (max-width: 770px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h4 {
+      font-size: 20px;
+    }
     #header {
       height: 355px;
     }
@@ -825,16 +1323,193 @@ h4 {
       margin: 10px 8vw;
     }
     #direct-business-line .direct-business-line {
-      font-size: 5vw;
+      font-size: 3.5vw;
     }
-    #direct-business-line h1 {
-      font-size: 13vw;
+    #direct-business-line h1,
+    .gold-number {
+      font-size: 11vw;
     }
-    #about-us-section .two-column-flex {
+    #about-us-section .two-column-flex,
+    .two-column-flex {
       margin-bottom: 20px;
     }
-  }
+    #top-txt-2 {
+      width: 85vw;
+    }
+    #top-txt-2 h3 {
+      font-size: 5vw;
+    }
+    #top-txt-2 img {
+      width: 6vw;
+    }
+    .three-column-boxes {
+      width: 95%;
+      display: unset;
+    }
+    .three-column-boxes .txt-box {
+      width: 90%;
+    }
+    .three-column-boxes .txt-box .box .box-heading {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .three-column-boxes .txt-box .box p {
+      padding: 3vw 4vw 30px 4vw;
+      height: unset;
+      font-size: 16px;
+    }
+    .black-band .black-band-sub-heading {
+      font-size: 2.9vw;
+    }
+    .sub-heading {
+      font-size: 5.5vw;
+    }
+    #funding-imgs {
+      display: none;
+    }
+    #funding-imgs-2 {
+      display: unset;
+      width: 100%;
+      margin-top: 60px;
+    }
+    #funding-imgs-2 img {
+      border-top: solid #d39735 5px;
+      border-bottom: solid #d39735 5px;
+      width: 100%;
+    }
+    .accordion .accordion-item .tick {
+      width: 22px;
+    }
+    #click-below .sub-heading {
+      font-size: 20px;
+    }
+    .accordion .accordion-item {
+      padding-top: 10px;
+    }
+    .accordion .accordion-item h4 {
+      font-size: 16px;
+      padding-top: 8px;
+    }
+    .accordion .accordion-item .tick {
+      margin: 3px 10px auto 0;
+    }
+    .accordion .accordion-item p {
+      font-size: 16px;
+    }
+    .accordion .accordion-item .panel h4 {
+      font-size: 20px;
+    }
+    .accordion .accordion-item .panel h5 {
+      text-align: left;
+    }
+    .accordion .accordion-item .panel .black-box .two-columns .column li {
+      font-size: 16px;
+    }
+    .accordion .accordion-item .panel .black-box .two-columns .column {
+      margin: 0;
+    }
+    .accordion .accordion-item .panel li {
+      font-size: 15px;
+      position: relative;
+    }
+    .accordion .accordion-item .panel .black-box {
+      padding: 0 15px;
+    }
+    .accordion .accordion-item .panel .black-box h4 {
+      margin-left: 20px;
+    }
+    .accordion {
+      width: 88vw;
+    }
+    .accordion .accordion-item h4 {
+      width: 95%;
+    }
+    .accordion .accordion-item .panel {
+      padding: 0px 0px 10px 0px;
+    }
+    .accordion .accordion-item input:checked ~ .panel {
+      max-height: 1200px;
+    }
+    .accordion .accordion-item .panel .black-box {
+      padding: 0;
+    }
+    .accordion .accordion-item .panel .centred, .accordion .accordion-item .panel .black-box .centred {
+      text-align: left;
+      width: unset;
+    }
+    .accordion .accordion-item .panel ul, .accordion .accordion-item .panel .black-box .two-columns .column ul {
+      margin: 10px 0 15px 25px;
+    }
+    .accordion .accordion-item .panel .black-box .secured-column {
+      margin: 0 0 0 15px!important;
+    }
+    #black-box-horizontal-list {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #list-column {
+      margin: 0 auto 0 auto;
+      width: 270px;
+    }
+    #two-column-list {
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+    #list-column .list-item {
+      margin: 13px 0;
+    }
+    #list-column .list-item img {
+      float: left;
+    }
+    #list-column .list-item img {
+      margin: -4px 10px 0 0;
+    }
+    #list-column .list-item h4 {
+      margin: 3px 0;
+      font-size: 16px; 
+    }
+    #top-item-list-1 {
+      margin-top: 15px !important;
+    }
+    #bottom-item-list-1 {
+      margin-bottom: 0 !important;
+    }
+    #bottom-item-list-2 {
+      margin-bottom: 25px !important;
+    }
+    .sub-heading {
+      margin-bottom: 30px;
+    }
+    #click-below {
+      margin-top: -7px;
+    }
+    #logo-number {
+      margin-bottom: 4vw;  
+    }
+    #logo-number img {
+      width: 14vw;
+      align-self: center;
+    }
+    #immediate-response .gold-number {
+      font-size: 10vw;
+      margin: 0 0 1vw 0;
+      align-self: center;
+    }
+    #immediate-response .direct-business-line {
+      font-size: 4vw;
+    }
+    #immediate-response .direct-business-line-2 {
+      font-size: 6vw; 
+    }
+}
+
   @media (max-width: 490px) {
+    h2 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 16px;
+    }
     #header {
       height: 325px;
     }
@@ -868,4 +1543,26 @@ h4 {
       font-size: 5.5vw;
       margin: 10px 20px 0 20px;
     }
+    #direct-business-line {
+      width: 90%;
+      }
+    #direct-business-line .direct-business-line {
+      font-size: 19px;
+    }
+    .black-band .black-band-sub-heading {
+      font-size: 15px;
+    }
+    .accordion .accordion-item .tick {
+      display: none;
+    }
+    .accordion .accordion-item .panel ul, .accordion .accordion-item .panel .black-box .two-columns .column ul {
+      margin: 10px 0 15px 0;
+    }
+    .accordion .accordion-item .panel li {
+      font-size: 14px;
+    }
+    .accordion .accordion-item .panel .black-box .black-box-column {
+      margin-left: 15px;
+    }
+    
   }
