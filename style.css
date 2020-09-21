@@ -398,6 +398,11 @@ h4 {
   line-height: 1.6;
 }
 
+#about-us-section .two-column-flex .column h5,
+.two-column-flex .column h5 {
+  text-align: left;
+}
+
 #direct-business-line {
   text-align: center;
   }
@@ -529,10 +534,6 @@ h4 {
   margin: 0 auto 50px auto;
 }
 
-#list-column {
-  
-}
-
 #list-column .list-item {
   display: flex;
   justify-content: flex-start;
@@ -547,6 +548,7 @@ h4 {
 #funding-imgs {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #funding-imgs img {
@@ -866,6 +868,135 @@ margin: 0 20px;
   margin-bottom: 3vw !important;
   margin-top: 3vw;
 }
+#declined-finance-number-2 {
+  display: none;
+}
+
+
+/* ------------ Twelve Boxes ------------- */
+/* ------------ Twelve Boxes ------------- */
+/* ------------ Twelve Boxes ------------- */
+
+.three-column-boxes-2 {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;
+  justify-content: space-around;
+}
+
+.three-column-boxes-2 .icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23vw;
+  margin: 20px;
+}
+
+.three-column-boxes-2 .icon-box img {
+  width: 40%;
+  position: relative;
+  top: 2.3vw;
+}
+
+.three-column-boxes-2 .icon-box .gold-band {
+  background: #D39735;
+  width: 100%;
+  height: 2vw;
+  border-bottom: solid 6px #ffffee;
+  border-radius: 25px 25px 0 0;
+}
+
+.three-column-boxes-2 .icon-box .icon-box-txt {
+  width: 100%;
+  background: black;
+  color: #FFFFEE;
+  font-size: 2.5vw;
+  text-align: center;
+  border-bottom: solid 8px #D39735;
+  border-radius: 0 0 25px 25px;
+}
+
+.three-column-boxes-2 .icon-box .icon-box-txt h5 {
+  margin: 1vw 0 1.5vw 0;
+}
+
+
+/* ------------ Why Choose Us? ------------- */
+/* ------------ Why Choose Us? ------------- */
+/* ------------ Why Choose Us? ------------- */
+
+#choose-us-img {
+  margin-top: 0;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+#why-black-band {
+  margin-bottom: 0;
+  margin-top: 150px;
+}
+
+#choose-us-list {
+  width: 82vw;
+  margin: 2vw auto;
+}
+
+#choose-us-list .list-item {
+  display: flex;
+  margin: auto;
+  width: 85%;
+}
+
+#choose-us-list .list-item h4 {
+  margin: 0.6vw 0;
+  font-size: 1.5vw;
+}
+
+#choose-us-list .list-item .tick {
+  width: 2vw;
+}
+
+.choose-us-txt {
+  font-size: 1.1vw;
+  font-weight: 600;
+  width: 70%;
+  margin: 1.75vw auto;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ------------ Contact Us ------------- */
+/* ------------ Contact Us ------------- */
+/* ------------ Contact Us ------------- */
+
+ /* Style inputs */
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: #45a049;
+} 
 
 
 
@@ -889,619 +1020,695 @@ margin: 0 20px;
 }
 
 @media (max-width: 1250px) {
-    h2 {
-      font-size: 4vw;
-      margin: 0 0 0.6vw 0;
+h2 {
+  font-size: 4vw;
+  margin: 0 0 0.6vw 0;
+}
+h4 {
+  font-size: 1.9vw;
+}
+.navbar {
+    height: 40px;
+    position: absolute;
+    z-index: 98;
+    transition: all 0.4s ease-out;
+    padding: 13px 0 0 0;
+  }
+  .navbar .menu,
+  .smallnavbar .menu,
+  .smallnavbar2 .menu {
+    position: fixed;
+    top: 50px;
+    clear: both;
+    float: right;
+    max-height: 0;
+    transition: all 0.3s ease-out;
+    /* background: rgb(25, 11, 29); */
+    width: 100%;
+  }
+  .navbar .menu li,
+  .smallnavbar .menu li,
+  .smallnavbar2 .menu li {
+    border-bottom: 1px solid #D39735;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+  }
+  .navbar .menu a, .navbar .menu a:active, .navbar .menu a:visited,
+  .smallnavbar .menu a, .smallnavbar .menu a:active, .smallnavbar .menu a:visited,
+  .smallnavbar2 .menu a, .smallnavbar2 .menu a:active, .smallnavbar2 .menu a:visited {
+    padding: 20px 20px;
+    color: #FFFFEE;
+    font-size: 14px;
+  }
+  .navbar .menu a:hover, .smallnavbar .menu a:hover,  .smallnavbar2 .menu a:hover {
+    outline: none;
+  }     
+  .navbar .logo {
+    width: 125px;
+    margin-left: 3vw;
+    padding-top: 0;
+  }
+  .navbar #phone-number-box {
+    display: none;
+  }
+  #dropdown-phone-box {
+    display: unset;
+  }
+  #small-number-box {
+    display: none;
+  }
+  #header {
+    height: 425px;
+    background: url(assets/direct-business-finance-header.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    top: 40px;
+  }
+  #header-txt-box {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    margin: auto;
+    height: 86%;
+    padding: 60px 0 0 0;
+  }
+  #header-txt {
+    font-size: 41px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  #header-sub-txt {
+    font-weight: 600;
+    font-weight: 700;
     }
-    h4 {
-      font-size: 1.9vw;
+  #about-us-section {
+    position: relative;
+    top: 40px;
+  }
+  #about-quote {
+    font-size: 2vw;
+  }
+  #about-us-section .two-column-flex .column,
+  .two-column-flex .column {
+    font-size: 1.2vw;
+  }
+  #top-txt-2 {
+    display: flex;
+    width: 740px;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  #top-txt-2 h3 {
+    font-size: 40px;
+    margin: 0;
+  }
+  #top-txt-2 img {
+    width: 35px;
+  }
+  .three-column-boxes {
+    justify-content: space-evenly;
+  }
+  .three-column-boxes .top-txt {
+    display: none;
+  }
+  .three-column-boxes .txt-box {
+    width: 375px;
+  }
+  .three-column-boxes .txt-box .box .box-heading {
+    padding: 7px;
+    font-size: 18px;
+  }
+  .three-column-boxes .txt-box .box p {
+    padding: 10px 25px 0 25px;
+    height: 280px;
+    font-size: 16px
+  }
+  #gold-number {
+    font-size: 8vw;
+  }
+  #funding-imgs {
+    width: 90%;
+    margin: auto;
+  }
+  #funding-imgs img {
+    margin: 0 10px;
+  }
+  .black-band .black-band-sub-heading {
+    width: 84vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.9vw;
+  }
+  .sub-heading {
+    font-size: 3.5vw;
+    margin-bottom: 1.3vw;
+  }
+  #two-column-list {
+    margin: 0 auto 4vw auto;
+  }
+  .accordion .accordion-item .tick {
+    width: 2.7vw;
+  }
+  #funding-imgs img {
+    width: 19vw;
+  }
+  .three-column-boxes-2 .icon-box {
+    width: 30vw;
     }
-    .navbar {
-        height: 40px;
-        position: absolute;
-        z-index: 98;
-        transition: all 0.4s ease-out;
-        padding: 13px 0 0 0;
-      }
-      .navbar .menu,
-      .smallnavbar .menu,
-      .smallnavbar2 .menu {
-        position: fixed;
-        top: 50px;
-        clear: both;
-        float: right;
-        max-height: 0;
-        transition: all 0.3s ease-out;
-        /* background: rgb(25, 11, 29); */
-        width: 100%;
-      }
-      .navbar .menu li,
-      .smallnavbar .menu li,
-      .smallnavbar2 .menu li {
-        border-bottom: 1px solid #D39735;
-        text-align: center;
-        width: 40%;
-        margin: auto;
-      }
-      .navbar .menu a, .navbar .menu a:active, .navbar .menu a:visited,
-      .smallnavbar .menu a, .smallnavbar .menu a:active, .smallnavbar .menu a:visited,
-      .smallnavbar2 .menu a, .smallnavbar2 .menu a:active, .smallnavbar2 .menu a:visited {
-        padding: 20px 20px;
-        color: #FFFFEE;
-        font-size: 14px;
-      }
-      .navbar .menu a:hover, .smallnavbar .menu a:hover,  .smallnavbar2 .menu a:hover {
-        outline: none;
-      }     
-      .navbar .logo {
-        width: 125px;
-        margin-left: 3vw;
-        padding-top: 0;
-      }
-      .navbar #phone-number-box {
-        display: none;
-      }
-      #dropdown-phone-box {
-        display: unset;
-      }
-      #small-number-box {
-        display: none;
-      }
-      #header {
-        height: 425px;
-        background: url(assets/direct-business-finance-header.jpg) no-repeat;
-        background-position: top center;
-        background-size: cover;
-        position: relative;
-        top: 40px;
-      }
-      #header-txt-box {
-        position: absolute;
-        top: -1px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.2);
-        margin: auto;
-        height: 86%;
-        padding: 60px 0 0 0;
-      }
-      #header-txt {
-        font-size: 41px;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-      }
-      #header-sub-txt {
-        font-weight: 600;
-        font-weight: 700;
-        }
-      #about-us-section {
-        position: relative;
-        top: 40px;
-      }
-      #about-quote {
-        font-size: 2vw;
-      }
-      #about-us-section .two-column-flex .column,
-      .two-column-flex .column {
-        font-size: 1.2vw;
-      }
-      #top-txt-2 {
-        display: flex;
-        width: 740px;
-        justify-content: space-evenly;
-        margin: auto;
-      }
-      #top-txt-2 h3 {
-        font-size: 40px;
-        margin: 0;
-      }
-      #top-txt-2 img {
-        width: 35px;
-      }
-      .three-column-boxes {
-        justify-content: space-evenly;
-      }
-      .three-column-boxes .top-txt {
-        display: none;
-      }
-      .three-column-boxes .txt-box {
-        width: 375px;
-      }
-      .three-column-boxes .txt-box .box .box-heading {
-        padding: 7px;
-        font-size: 18px;
-      }
-      .three-column-boxes .txt-box .box p {
-        padding: 10px 25px 0 25px;
-        height: 280px;
-        font-size: 16px
-      }
-      #gold-number {
-        font-size: 8vw;
-      }
-      #funding-imgs {
-        width: 90%;
-        margin: auto;
-      }
-      #funding-imgs img {
-        margin: 0 10px;
-      }
-      .black-band .black-band-sub-heading {
-        width: 84vw;
-        margin-bottom: 0.5vw;
-        font-size: 1.9vw;
-      }
-      .sub-heading {
-        font-size: 3.5vw;
-        margin-bottom: 1.3vw;
-      }
-      #two-column-list {
-        margin: 0 auto 4vw auto;
-      }
-      .accordion .accordion-item .tick {
-        width: 2.7vw;
-      }
-      #funding-imgs img {
-        width: 19vw;
-      }
+  .three-column-boxes-2 .icon-box .icon-box-txt {
+    font-size: 3.5vw;
+    }
+  .three-column-boxes-2 .icon-box .icon-box-txt h5 {
+    margin: 2vw 0 2.5vw 0;
+    }
+  .choose-us-txt {
+    font-size: 1.3vw;
+    }
 }
 
   @media (min-width: 1250px) {
-    .navbar li,
-    .smallnavbar li,
-    .smallnavbar2 li {
-      float: left;
-    }
-    .navbar .menu a,
-    .navbar .menu a:active,
-    .navbar .menu a:visited,
-    .navbar li a,
-    .smallnavbar2 .menu a,
-    .smallnavbar2 .menu a:active,
-    .smallnavbar2 .menu a:visited,
-    .smallnavbar2 li a {
-      padding: 0.5vw 0;
-      background-color: #FFFFEE;
-      width: 9vw;
-      text-align: center;
-      margin: 0 1vw;
-    }
-    .smallnavbar .menu a,
-    .smallnavbar .menu a:active,
-    .smallnavbar .menu a:visited,
-    .smallnavbar li a {
-      text-align: center;
-      margin: 0 1vw;
-      color: #FFFFEE;
-      font-size: 14px;
-    }
-    .navbar .menu a:hover,
-    .smallnavbar2 .menu a:hover {
+  .navbar li,
+  .smallnavbar li,
+  .smallnavbar2 li {
+    float: left;
+  }
+  .navbar .menu a,
+  .navbar .menu a:active,
+  .navbar .menu a:visited,
+  .navbar li a,
+  .smallnavbar2 .menu a,
+  .smallnavbar2 .menu a:active,
+  .smallnavbar2 .menu a:visited,
+  .smallnavbar2 li a {
+    padding: 0.5vw 0;
+    background-color: #FFFFEE;
+    width: 9vw;
+    text-align: center;
+    margin: 0 1vw;
+  }
+  .smallnavbar .menu a,
+  .smallnavbar .menu a:active,
+  .smallnavbar .menu a:visited,
+  .smallnavbar li a {
+    text-align: center;
+    margin: 0 1vw;
     color: #FFFFEE;
-    background-color: black;
-    outline: #FFFFEE solid 3px;
-    outline-offset: -3px;
+    font-size: 14px;
   }
-  .smallnavbar .menu a:hover {
-    color: #D39735;
-    outline: none;
-  }
-    .navbar .menu,
-    .smallnavbar2 .menu {
-      position: relative;
-      top: 1vw;
-      clear: none;
-      max-height: none;
-      padding-left: 3vw;
-  }
-  .smallnavbar .menu {
-    padding-left: 10vw;
+  .navbar .menu a:hover,
+  .smallnavbar2 .menu a:hover {
+  color: #FFFFEE;
+  background-color: black;
+  outline: #FFFFEE solid 3px;
+  outline-offset: -3px;
+}
+.smallnavbar .menu a:hover {
+  color: #D39735;
+  outline: none;
+}
+  .navbar .menu,
+  .smallnavbar2 .menu {
     position: relative;
-    top: 5px;
+    top: 1vw;
+    clear: none;
+    max-height: none;
+    padding-left: 3vw;
+}
+.smallnavbar .menu {
+  padding-left: 10vw;
+  position: relative;
+  top: 5px;
+}
+  .navbar .menu-icon,
+  .smallnavbar .menu-icon,
+  .smallnavbar2 .menu-icon {
+    display: none;
   }
-    .navbar .menu-icon,
-    .smallnavbar .menu-icon,
-    .smallnavbar2 .menu-icon {
-      display: none;
-    }
-  #small-number-box {
-    display: flex;
-    float: right;
-    margin-right: 2.5vw;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    bottom: 24px;
+#small-number-box {
+  display: flex;
+  float: right;
+  margin-right: 2.5vw;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 24px;
+}
+#small-phone-img {
+  width: 35px;
+}
+#small-phone-number {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #D39735;
+  font-weight: 900;
+}
   }
-  #small-phone-img {
-    width: 35px;
+
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 4.5vw;
   }
-  #small-phone-number {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+  .black-band {
+    padding: 2vw 0;
+  }
+  #about-us-section .two-column-flex .column,
+  .two-column-flex .column {
+    font-size: 1.3vw;
+  }
+  .accordion {
+    width: 85vw;
+  }
+  .accordion .accordion-item p {
+    font-size: 1.6vw;
+    line-height: 1.75;
+  }
+  .accordion .accordion-item .panel .black-box {
+    padding: 0 2vw;
+  }
+  .accordion .accordion-item .panel h4 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+  .accordion .accordion-item .panel .black-box .two-columns .column ul {
+    margin: 0 0;
+  }
+  .accordion .accordion-item .panel .black-box .two-columns .column li {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  #about-us-section .two-column-flex,
+  .two-column-flex {
+    margin-bottom: 40px;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  #about-us-section .two-column-flex .column,
+  .two-column-flex .column {
+    width: 85%;
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  #welcome {
+    font-size: 4vw;
+  }
+  #gold-bar {
+    height: 7px;
+    width: 30vw;
+  }
+  #about-us {
+    font-size: 3.5vw;
+  }
+  #direct-business-line h4 {
+    font-size: 3vw;
+  }
+  #direct-business-line h1 {
+    font-size: 8vw;
+  }
+  #simple {
+    font-size: 2.8vw;
+  }
+  #about-quote {
+    font-size: 2.5vw;
+  }
+  #top-txt-2 {
+    width: 70vw;
+  }
+  #top-txt-2 h3 {
+    font-size: 4vw;
+  }
+  .three-column-boxes .txt-box {
+    width: 37vw;
+  }
+  #top-txt-2 img {
+    width: 4vw;
+  }
+  .three-column-boxes .txt-box .box .box-heading {
+    padding: 0.5vw;
+    font-size: 1.7vw;
+  }
+  .three-column-boxes .txt-box .box p {
+    padding: 1vw 2vw 0 2vw;
+    height: 28vw;
+    font-size: 1.6vw;
+  }
+  #two-column-list {
+    width: 85%;
+  }
+  #list-column .list-item h4 {
+    font-size: 2vw;
+  }
+  #for-more-info {
+    margin-top: 0;
+  }
+  .two-column-flex .column .faq-quote {
+    font-size: 20px;
+  }
+  .two-column-flex .column h5 {
+    font-size: 24px;
+  }
+  #for-more-info {
+    display: none;
+  }
+  #declined-image {
+    display: none;
+  }
+  #declined-finance-number-2 {
+    display: unset;
+    text-align: center;
+    width: 100%;
+  }
+  #declined-finance-number-2 img {
+    width: 100%;
+  }
+  #declined-finance-number-2 h4 {
+    font-size: 17px;
+  }
+  #declined-finance-number-2 a {
+    display: inline-block;
+    width: 100%;
+    font-size: 10vw;
+    font-weight: 800;
     color: #D39735;
-    font-weight: 900;
+    text-decoration: none;
   }
+  #top-heading2 {
+    margin-bottom: 0;
   }
-
-  @media (max-width: 1100px) {
-    h2 {
-      font-size: 4.5vw;
-    }
-    .black-band {
-      padding: 2vw 0;
-    }
-    #about-us-section .two-column-flex .column,
-    .two-column-flex .column {
-      font-size: 1.3vw;
-    }
-    .accordion {
-      width: 85vw;
-    }
-    .accordion .accordion-item p {
-      font-size: 1.6vw;
-      line-height: 1.75;
-    }
-    .accordion .accordion-item .panel .black-box {
-      padding: 0 2vw;
-    }
-    .accordion .accordion-item .panel h4 {
-      font-size: 2vw;
-      margin-bottom: 1vw;
-    }
-    .accordion .accordion-item .panel .black-box .two-columns .column ul {
-      margin: 0 0;
-    }
-    .accordion .accordion-item .panel .black-box .two-columns .column li {
-      font-size: 1.5vw;
-    }
+  #bottom-heading2 {
+    margin-top: 0;
   }
-
-  @media (max-width: 1000px) {
-
-    #about-us-section .two-column-flex,
-    .two-column-flex {
-      margin-bottom: 40px;
-      margin-top: 0;
-      flex-direction: column;
-    }
-    #about-us-section .two-column-flex .column,
-    .two-column-flex .column {
-      width: 85%;
-      margin: 10px auto;
-      font-size: 16px;
-    }
-    #welcome {
-      font-size: 4vw;
-    }
-    #gold-bar {
-      height: 7px;
-      width: 30vw;
-    }
-    #about-us {
-      font-size: 3.5vw;
-    }
-    #direct-business-line h4 {
-      font-size: 3vw;
-    }
-    #direct-business-line h1 {
-      font-size: 8vw;
-    }
-    #simple {
-      font-size: 2.8vw;
-    }
-    #about-quote {
-      font-size: 2.5vw;
-    }
-    #top-txt-2 {
-      width: 70vw;
-    }
-    #top-txt-2 h3 {
-      font-size: 4vw;
-    }
-    .three-column-boxes .txt-box {
-      width: 37vw;
-    }
-    #top-txt-2 img {
-      width: 4vw;
-    }
-    .three-column-boxes .txt-box .box .box-heading {
-      padding: 0.5vw;
-      font-size: 1.7vw;
-    }
-    .three-column-boxes .txt-box .box p {
-      padding: 1vw 2vw 0 2vw;
-      height: 28vw;
-      font-size: 1.6vw;
-    }
-    #two-column-list {
-      width: 85%;
-    }
-    #list-column .list-item h4 {
-      font-size: 2vw;
-    }
-    #for-more-info {
-      margin-top: 0;
-    }
-    .two-column-flex .column .faq-quote {
-      font-size: 16px;
-    }
-    .two-column-flex .column h5 {
-      font-size: 24px;
-    }
+  .choose-us-txt {
+    font-size: 16px;
+    width: 80%;
   }
-
-  @media (max-width: 900px) {
-
-    #gold-number {
-      font-size: 11vw;
-    }
-    .accordion .accordion-item p {
-      font-size: 2vw;
-      line-height: 1.6;
-    }
-    .accordion .accordion-item .panel h4 {
-      font-size: 2.5vw;
-    }
-    .accordion .accordion-item .panel .black-box .two-columns .column li {
-      font-size: 2vw;
-    }
-    .accordion .accordion-item h4 {
-      font-size: 2.3vw;
-      }
-    .accordion .accordion-item .tick {
-      margin: 1.6vw 1.2vw auto 0;
-      }
-    .accordion .accordion-item .panel .black-box .two-columns {
-      display: unset;
-      }
-    .accordion .accordion-item .panel .black-box .two-columns .column {
-      width: 95%;
-      margin: auto;
-      }
-    .accordion .accordion-item .panel h5 {
-      font-size: 16px;
-    }
-    .accordion .accordion-item .panel li {
-      font-size: 2vw;
-    }
-    #click-below .sub-heading {
-      font-size: 2.3vw;
-    }
-    .accordion {
-      margin: 7vw auto;
-    }
-    #list-item-top-a {
-      margin-top: 15px;
-      }
-    #list-item-top-d {
-      margin-bottom: 20px;
-    }
-  }
-
-  @media (max-width: 770px) {
-    h2 {
-      font-size: 5vw;
-    }
-    h4 {
-      font-size: 20px;
-    }
-    #header {
-      height: 355px;
-    }
-    #header-txt-box {
-      top: 0;
-      height: 295px;
-    }
-    #header-txt {
-      font-size: 4.5vw;
-    }
-    #header-txt-box a {
-      padding: 2vw;
-      font-size: 2vw;
-    }
-    #simple {
-      display: none
-    }
-    #simple-2 {
-      display: unset;
-      text-align: center;
-      font-size: 4.5vw;
-    }
-    #about-us {
-      font-size: 5.5vw;
-    }
-    #welcome {
-      font-size: 7vw;
-      text-align: center;
-    }
-    #about-quote {
-      display: none;
-    }
-    #about-quote-2 {
-      display: unset;
-      font-size: 3.5vw;
-      margin: 10px 8vw;
-    }
-    #direct-business-line .direct-business-line {
-      font-size: 3.5vw;
-    }
-    #direct-business-line h1,
-    .gold-number {
-      font-size: 11vw;
-    }
-    #about-us-section .two-column-flex,
-    .two-column-flex {
-      margin-bottom: 20px;
-    }
-    #top-txt-2 {
-      width: 85vw;
-    }
-    #top-txt-2 h3 {
-      font-size: 5vw;
-    }
-    #top-txt-2 img {
-      width: 6vw;
-    }
-    .three-column-boxes {
-      width: 95%;
-      display: unset;
-    }
-    .three-column-boxes .txt-box {
-      width: 90%;
-    }
-    .three-column-boxes .txt-box .box .box-heading {
-      padding: 10px;
-      font-size: 16px;
-    }
-    .three-column-boxes .txt-box .box p {
-      padding: 3vw 4vw 30px 4vw;
-      height: unset;
-      font-size: 16px;
-    }
-    .black-band .black-band-sub-heading {
-      font-size: 2.9vw;
-    }
-    .sub-heading {
-      font-size: 5.5vw;
-    }
-    #funding-imgs {
-      display: none;
-    }
-    #funding-imgs-2 {
-      display: unset;
-      width: 100%;
-      margin-top: 60px;
-    }
-    #funding-imgs-2 img {
-      border-top: solid #d39735 5px;
-      border-bottom: solid #d39735 5px;
-      width: 100%;
-    }
-    .accordion .accordion-item .tick {
-      width: 22px;
-    }
-    #click-below .sub-heading {
-      font-size: 20px;
-    }
-    .accordion .accordion-item {
-      padding-top: 10px;
-    }
-    .accordion .accordion-item h4 {
-      font-size: 16px;
-      padding-top: 8px;
-    }
-    .accordion .accordion-item .tick {
-      margin: 3px 10px auto 0;
-    }
-    .accordion .accordion-item p {
-      font-size: 16px;
-    }
-    .accordion .accordion-item .panel h4 {
-      font-size: 20px;
-    }
-    .accordion .accordion-item .panel h5 {
-      text-align: left;
-    }
-    .accordion .accordion-item .panel .black-box .two-columns .column li {
-      font-size: 16px;
-    }
-    .accordion .accordion-item .panel .black-box .two-columns .column {
-      margin: 0;
-    }
-    .accordion .accordion-item .panel li {
-      font-size: 15px;
-      position: relative;
-    }
-    .accordion .accordion-item .panel .black-box {
-      padding: 0 15px;
-    }
-    .accordion .accordion-item .panel .black-box h4 {
-      margin-left: 20px;
-    }
-    .accordion {
-      width: 88vw;
-    }
-    .accordion .accordion-item h4 {
-      width: 95%;
-    }
-    .accordion .accordion-item .panel {
-      padding: 0px 0px 10px 0px;
-    }
-    .accordion .accordion-item input:checked ~ .panel {
-      max-height: 1200px;
-    }
-    .accordion .accordion-item .panel .black-box {
-      padding: 0;
-    }
-    .accordion .accordion-item .panel .centred, .accordion .accordion-item .panel .black-box .centred {
-      text-align: left;
-      width: unset;
-    }
-    .accordion .accordion-item .panel ul, .accordion .accordion-item .panel .black-box .two-columns .column ul {
-      margin: 10px 0 15px 25px;
-    }
-    .accordion .accordion-item .panel .black-box .secured-column {
-      margin: 0 0 0 15px!important;
-    }
-    #black-box-horizontal-list {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    #list-column {
-      margin: 0 auto 0 auto;
-      width: 270px;
-    }
-    #two-column-list {
-      flex-direction: column;
-      margin-bottom: 60px;
-    }
-    #list-column .list-item {
-      margin: 13px 0;
-    }
-    #list-column .list-item img {
-      float: left;
-    }
-    #list-column .list-item img {
-      margin: -4px 10px 0 0;
-    }
-    #list-column .list-item h4 {
-      margin: 3px 0;
-      font-size: 16px; 
-    }
-    #top-item-list-1 {
-      margin-top: 15px !important;
-    }
-    #bottom-item-list-1 {
-      margin-bottom: 0 !important;
-    }
-    #bottom-item-list-2 {
-      margin-bottom: 25px !important;
-    }
-    .sub-heading {
-      margin-bottom: 30px;
-    }
-    #click-below {
-      margin-top: -7px;
-    }
-    #logo-number {
-      margin-bottom: 4vw;  
-    }
-    #logo-number img {
-      width: 14vw;
-      align-self: center;
-    }
-    #immediate-response .gold-number {
-      font-size: 10vw;
-      margin: 0 0 1vw 0;
-      align-self: center;
-    }
-    #immediate-response .direct-business-line {
-      font-size: 4vw;
-    }
-    #immediate-response .direct-business-line-2 {
-      font-size: 6vw; 
+  #choose-us-list {
+   
+    width: 80%;
+    }
+  #choose-us-list .list-item {
+    width: 85%;
+    width: 100%;
+    }
+  #choose-us-list .list-item .tick {
+    width: 20px;
+    margin-right: 5px;
     }
 }
+
+@media (max-width: 900px) {
+  #gold-number {
+    font-size: 11vw;
+  }
+  .accordion .accordion-item p {
+    font-size: 2vw;
+    line-height: 1.6;
+  }
+  .accordion .accordion-item .panel h4 {
+    font-size: 2.5vw;
+  }
+  .accordion .accordion-item .panel .black-box .two-columns .column li {
+    font-size: 2vw;
+  }
+  .accordion .accordion-item h4 {
+    font-size: 2.3vw;
+    }
+  .accordion .accordion-item .tick {
+    margin: 1.6vw 1.2vw auto 0;
+    }
+  .accordion .accordion-item .panel .black-box .two-columns {
+    display: unset;
+    }
+  .accordion .accordion-item .panel .black-box .two-columns .column {
+    width: 95%;
+    margin: auto;
+    }
+  .accordion .accordion-item .panel h5 {
+    font-size: 16px;
+  }
+  .accordion .accordion-item .panel li {
+    font-size: 2vw;
+  }
+  #click-below .sub-heading {
+    font-size: 2.3vw;
+  }
+  .accordion {
+    margin: 7vw auto;
+  }
+  #list-item-top-a {
+    margin-top: 15px;
+    }
+  #list-item-top-d {
+    margin-bottom: 20px;
+  }
+}
+
+ @media (max-width: 770px) {
+   h2 {
+     font-size: 5vw;
+   }
+   h4 {
+     font-size: 20px;
+   }
+   #header {
+     height: 355px;
+   }
+   #header-txt-box {
+     top: 0;
+     height: 295px;
+   }
+   #header-txt {
+     font-size: 4.5vw;
+   }
+   #header-txt-box a {
+     padding: 2vw;
+     font-size: 2vw;
+   }
+   #simple {
+     display: none
+   }
+   #simple-2 {
+     display: unset;
+     text-align: center;
+     font-size: 4.5vw;
+   }
+   #about-us {
+     font-size: 5.5vw;
+   }
+   #welcome {
+     font-size: 7vw;
+     text-align: center;
+   }
+   #about-quote {
+     display: none;
+   }
+   #about-quote-2 {
+     display: unset;
+     font-size: 3.5vw;
+     margin: 10px 8vw;
+   }
+   #direct-business-line .direct-business-line {
+     font-size: 3.5vw;
+   }
+   #direct-business-line h1,
+   .gold-number {
+     font-size: 11vw;
+   }
+   #about-us-section .two-column-flex,
+   .two-column-flex {
+     margin-bottom: 20px;
+   }
+   #top-txt-2 {
+     width: 85vw;
+   }
+   #top-txt-2 h3 {
+     font-size: 5vw;
+   }
+   #top-txt-2 img {
+     width: 6vw;
+   }
+   .three-column-boxes {
+     width: 95%;
+     display: unset;
+   }
+   .three-column-boxes .txt-box {
+     width: 90%;
+   }
+   .three-column-boxes .txt-box .box .box-heading {
+     padding: 10px;
+     font-size: 16px;
+   }
+   .three-column-boxes .txt-box .box p {
+     padding: 3vw 4vw 30px 4vw;
+     height: unset;
+     font-size: 16px;
+   }
+   .black-band .black-band-sub-heading {
+     font-size: 2.9vw;
+   }
+   .sub-heading {
+     font-size: 5.5vw;
+   }
+   #funding-imgs {
+     display: none;
+   }
+   #funding-imgs-2 {
+     display: unset;
+     width: 100%;
+     margin-top: 60px;
+   }
+   #funding-imgs-2 img {
+     border-top: solid #d39735 5px;
+     border-bottom: solid #d39735 5px;
+     width: 100%;
+   }
+   .accordion .accordion-item .tick {
+     width: 22px;
+   }
+   #click-below .sub-heading {
+     font-size: 20px;
+   }
+   .accordion .accordion-item {
+     padding-top: 10px;
+   }
+   .accordion .accordion-item h4 {
+     font-size: 16px;
+     padding-top: 8px;
+   }
+   .accordion .accordion-item .tick {
+     margin: 3px 10px auto 0;
+   }
+   .accordion .accordion-item p {
+     font-size: 16px;
+   }
+   .accordion .accordion-item .panel h4 {
+     font-size: 20px;
+   }
+   .accordion .accordion-item .panel h5 {
+     text-align: left;
+   }
+   .accordion .accordion-item .panel .black-box .two-columns .column li {
+     font-size: 16px;
+   }
+   .accordion .accordion-item .panel .black-box .two-columns .column {
+     margin: 0;
+   }
+   .accordion .accordion-item .panel li {
+     font-size: 15px;
+     position: relative;
+   }
+   .accordion .accordion-item .panel .black-box {
+     padding: 0 15px;
+   }
+   .accordion .accordion-item .panel .black-box h4 {
+     margin-left: 20px;
+   }
+   .accordion {
+     width: 88vw;
+   }
+   .accordion .accordion-item h4 {
+     width: 95%;
+   }
+   .accordion .accordion-item .panel {
+     padding: 0px 0px 10px 0px;
+   }
+   .accordion .accordion-item input:checked ~ .panel {
+     max-height: 1200px;
+   }
+   .accordion .accordion-item .panel .black-box {
+     padding: 0;
+   }
+   .accordion .accordion-item .panel .centred, .accordion .accordion-item .panel .black-box .centred {
+     text-align: left;
+     width: unset;
+   }
+   .accordion .accordion-item .panel ul, .accordion .accordion-item .panel .black-box .two-columns .column ul {
+     margin: 10px 0 15px 25px;
+   }
+   .accordion .accordion-item .panel .black-box .secured-column {
+     margin: 0 0 0 15px!important;
+   }
+   #black-box-horizontal-list {
+     margin-left: 20px;
+     margin-right: 20px;
+   }
+   #list-column {
+     margin: 0 auto 0 auto;
+     width: 270px;
+   }
+   #two-column-list {
+     flex-direction: column;
+     margin-bottom: 60px;
+   }
+   #list-column .list-item {
+     margin: 13px 0;
+   }
+   #list-column .list-item img {
+     float: left;
+   }
+   #list-column .list-item img {
+     margin: -4px 10px 0 0;
+   }
+   #list-column .list-item h4 {
+     margin: 3px 0;
+     font-size: 16px; 
+   }
+   #top-item-list-1 {
+     margin-top: 15px !important;
+   }
+   #bottom-item-list-1 {
+     margin-bottom: 0 !important;
+   }
+   #bottom-item-list-2 {
+     margin-bottom: 25px !important;
+   }
+   .sub-heading {
+     margin-bottom: 30px;
+   }
+   #click-below {
+     margin-top: -7px;
+   }
+   #logo-number {
+     margin-bottom: 4vw;  
+   }
+   #logo-number img {
+     width: 14vw;
+     align-self: center;
+   }
+   #immediate-response .gold-number {
+     font-size: 10vw;
+     margin: 0 0 1vw 0;
+     align-self: center;
+   }
+   #immediate-response .direct-business-line {
+     font-size: 6vw;
+   }
+   #immediate-response .direct-business-line-2 {
+     font-size: 6vw; 
+   }
+   .three-column-boxes-2 .icon-box {
+    width: 80vw;
+    }
+  .three-column-boxes-2 .icon-box .icon-box-txt {
+    font-size: 9vw;
+    }
+  .three-column-boxes-2 .icon-box .icon-box-txt h5 {
+    margin: 4vw 0 5.5vw 0;
+    }
+  .three-column-boxes-2 .icon-box img {
+    width: 30%;
+    top: 5vw;
+    }
+  .three-column-boxes-2 .icon-box .gold-band {
+    height: 5vw;
+    }
+  .three-column-boxes-2 .icon-box {
+    margin: 10px;
+    }
+  }
 
   @media (max-width: 490px) {
     h2 {
@@ -1532,12 +1739,14 @@ margin: 0 20px;
     }
     #about-us {
       font-size: 7.5vw;
+      margin: 10px 0;
     }
     #welcome {
       font-size: 8vw;
+      margin: 10px 0;
     }
     #about-quote-2 {
-      font-size: 4.5vw;
+      font-size: 5vw;
     }
     #simple-2 {
       font-size: 5.5vw;
