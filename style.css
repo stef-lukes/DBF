@@ -29,6 +29,87 @@ h4 {
     font-weight: 700;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ------------ Thankyou ------------- */
+
+
+#thankyou {
+  text-align: center;
+  margin-top: 70px;
+  }
+#thankyou h1 {
+  font-size: 65px;
+  font-weight: 800;
+  margin-bottom: 0;
+  }
+#thankyou h2 {
+  color: black;
+  font-size: 30px;
+  }
+#thankyou a {
+ background-color: #D39735;
+  padding: 15px;
+  position: relative;
+  top: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffee;
+  }
+  @media (max-width: 1250px) {
+  .navbar-thanks {
+  position: relative !important;
+  }
+}
+@media (max-width: 770px) {
+  #thankyou h1 {
+    font-size: 11vw;
+    }
+#thankyou h2 {
+  font-size: 30px;
+  font-size: 5vw;
+  }
+}
+
+/* ------------ Thankyou ------------- */
+
+#footer {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+#footer img {
+  width: 14vw;
+  float: left;
+  }
+#footer p {
+  color: darkslategray;
+  text-align: center;
+  }
+
 /* ------------ Navabar ------------- */
 /* ------------ Navabar ------------- */
 /* ------------ Navabar ------------- */
@@ -970,8 +1051,89 @@ margin: 0 20px;
 /* ------------ Contact Us ------------- */
 /* ------------ Contact Us ------------- */
 
+#contact-black-band {
+  margin-top: 150px;
+  }
+
+#contact-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: flex-end;
+  margin-bottom: 150px;
+  }
+
+#info-panel {
+  width: 670px;
+margin: 0 75px 0 0;
+  }
+
+#logo-number-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo-number-contact img {
+  width: 60%;
+  margin: auto;
+}
+
+#logo-number-contact a {
+  font-size: 70px;
+  color: #D39735;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+}
+
+#contact-info {
+  text-align: left !important;
+  background: black;
+  border-top: #D39735 solid 10px;
+  border-bottom: #D39735 solid 10px;
+  color: #ffffee;
+  margin-top: 20px;
+  padding-left: 50px;
+padding-top: 15px;
+padding-bottom: 15px;
+  }
+
+#contact-info h5 {
+  text-align: left;
+  font-size: 18px;
+font-weight: 600;
+}
+
+#contact-info a {
+  text-align: left;
+text-decoration: none;
+color: #ffffee;
+font-weight: 700;
+font-size: 24px;
+display: block;
+}
+
+#contact-info a span {
+  color: #D39735;
+}
+
+#contact-info p {
+  text-align: left;
+}
+
+#contact-form {
+  width: 40vw;
+  }
+
+#contact label {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+}
+
  /* Style inputs */
- input[type=text], select {
+ input[type="text"], select, textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -979,24 +1141,29 @@ margin: 0 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
 }
 
 /* Style the submit button */
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
+button[type=submit] {
+  width: 25%;
+  background-color: #D39735;
+  color: #ffffee;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 14px;
+font-family: 'Open Sans',sans-serif;
+font-weight: 600;
 }
 
 /* Add a background color to the submit button on mouse-over */
-input[type=submit]:hover {
-  background-color: #45a049;
-} 
+button[type=submit]:hover {
+  background-color: black;
+}
 
 
 
@@ -1297,6 +1464,25 @@ h4 {
   .accordion .accordion-item .panel .black-box .two-columns .column li {
     font-size: 1.5vw;
   }
+  #contact-container {
+    align-items: center;
+    flex-direction: column;
+    }
+  #info-panel {
+    width: 80%;
+    margin: 0 0 50px 0;
+    }
+  #contact-form {
+    width: 40vw;
+    width: 80%;
+    }
+  #choose-us-list .list-item h4 {
+   font-size: 18px;
+   width: 95%;
+    }
+  #choose-us-list .list-item {
+    margin: 10px 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1707,6 +1893,25 @@ h4 {
     }
   .three-column-boxes-2 .icon-box {
     margin: 10px;
+    }
+  #contact-info a {
+    font-size: 18px;
+    }
+  #contact-info {
+    padding-left: 20px;
+    padding-right: 15px;
+    }
+  #logo-number-contact a {
+    font-size: 45px;
+    }
+  #contact-container {
+    margin-top: 60px;
+    }
+  #logo-number-contact img {
+    width: 75%;
+    }
+  #info-panel {
+    width: 100%;
     }
   }
 
